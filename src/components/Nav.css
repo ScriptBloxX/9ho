@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem;
+    z-index: 99;
+    background-color: var(--bg_secondary);
+    position: fixed;
+    width: 100%;
+}
+nav .button{
+    display: flex;
+    gap: 1rem;
+    z-index: 99;
+}
+a{
+    color: var(--text_main);
+    text-decoration: none;
+    font-size: 2rem;
+}

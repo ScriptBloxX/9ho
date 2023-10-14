@@ -1,0 +1,24 @@
+html,body{
+  scroll-behavior: smooth;
+}
+section{
+  background-color: var(--bg_secondary);
+  min-height: 100vh;
+}
+.home{
+  min-height: 0;
+  height: max-content;
+}
+*{
+  cursor: none;
+}
+.cursor{
+  z-index: 100;
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
