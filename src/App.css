@@ -13,6 +13,9 @@ section{
 *{
   cursor: none;
 }
+p{
+  word-wrap: break-word;
+}
 .cursor{
   z-index: 100;
   width: 5rem;

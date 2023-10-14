@@ -4,6 +4,7 @@ import Experience from './main/Experience.tsx'
 import Home from './main/Home.tsx'
 import 'aos/dist/aos.css'
 import { useState } from 'react'
+import Skill from './main/Education.tsx'
 
 function App() {
   const [cursorX, setCursorX] = useState<number>(0);
@@ -18,6 +19,7 @@ function App() {
       <Nav></Nav>
       <Home></Home>
       <Experience></Experience>
+      <Skill></Skill>
     </>
   )
 }

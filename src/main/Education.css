@@ -1,21 +1,21 @@
-.Experience .container {
+.Education .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
-.Experience h3{
+.Education h3{
     color: var(--bg_main2);
 }
 
-.Experience .timeline {
+.Education .timeline {
     position: relative;
     margin: 0 auto;
     width: 60%;
 }
 
-.Experience .timeline::after {
+.Education .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -26,14 +26,14 @@
     margin-left: -3px;
 }
 
-.Experience .box {
+.Education .box {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
 }
 
-.Experience .box::after {
+.Education .box::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -46,15 +46,15 @@
     z-index: 1;
 }
 
-.Experience .left {
+.Education .left {
     left: 0;
 }
 
-.Experience .right {
+.Education .right {
     left: 50%;
 }
 
-.Experience .left::before {
+.Education .left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -67,7 +67,7 @@
     border-color: transparent transparent transparent var(--text_3);
 }
 
-.Experience .right::before {
+.Education .right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -80,18 +80,18 @@
     border-color: transparent var(--text_3) transparent transparent;
 }
 
-.Experience .right::after {
+.Education .right::after {
     left: -16px;
 }
 
-.Experience .content {
+.Education .content {
     padding: 20px 30px;
     background-color: var(--text_3);
     position: relative;
     border-radius: 6px;
 }
 
-.Experience .content .bottom{
+.Education .content .bottom{
     background-color: var(--bg_main2);
     padding: .5rem;
     border-radius: 5px;
@@ -102,37 +102,37 @@
 }
 
 @media only screen and (max-width: 1080px) {
-    .Experience .timeline{
+    .Education .timeline{
         width: 90%;
     }
 }
 @media only screen and (max-width: 600px) {
-    .Experience .timeline{
+    .Education .timeline{
         width: 75%;
     }
-    .Experience .timeline::after {
+    .Education .timeline::after {
         left: 31px;
     }
 
-    .Experience .box {
+    .Education .box {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
 
-    .Experience .box::before {
+    .Education .box::before {
         left: 60px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
 
-    .Experience .left::after,
-    .Experience .right::after {
+    .Education .left::after,
+    .Education .right::after {
         left: 15px;
     }
 
-    .Experience .right {
+    .Education .right {
         left: 0%;
     }
 }
