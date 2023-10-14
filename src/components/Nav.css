@@ -1,16 +1,30 @@
 nav{
     display: flex;
+    flex-direction: column;
     justify-content:space-between;
-    padding: 1rem;
+    padding: 1rem .8rem;
     z-index: 99;
     background-color: var(--bg_secondary);
     position: fixed;
-    width: 100%;
-}
-nav .button{
-    display: flex;
+    width: max-content;
     gap: 1rem;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 1rem;
+    mix-blend-mode: difference;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 99;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: var(--text_main);
+    transition: all linear .2s;
 }
 a{
     color: var(--text_main);

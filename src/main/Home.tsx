@@ -2,6 +2,7 @@ import {useEffect} from 'react';
 import me from '../assets/me3.png';
 import './Home.css';
 import aos from 'aos';
+import { TypeAnimation } from 'react-type-animation';
 
 function Home() {
   useEffect(()=>{
@@ -31,7 +32,24 @@ function Home() {
               <button><i className="ri-github-fill"></i> Github</button>
               <button><i className="ri-youtube-fill"></i>Youtube</button>
             </div>
-
+        </div>
+      </div>
+      <div className="partition-container">
+        <div className="Partition">
+          <TypeAnimation
+            sequence={[
+              'A Full Stack Developer',
+              1000,
+              'A Game Developer',
+              1000,
+              'A Youtuber',
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{display: 'inline-block'}}
+            repeat={Infinity}
+          />
         </div>
       </div>
     </section>
