@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './Experience.css'
+import ScrollDown from '../components/ScrollDown';
 interface ExperienceItem {
     Date: string;
     JD: string;
@@ -24,7 +25,13 @@ function Experience() {
     }, [])
     return (
         <section className='Experience' id="Experience">
+            <ScrollDown></ScrollDown>
             <div className="container">
+                <div className="fake-tag-container">
+                    <h4 className='fake-tag' dangerouslySetInnerHTML={{__html: '{p className="thank-you"}'}}></h4>
+                    <h4 className='fake-tag fk-space' dangerouslySetInnerHTML={{__html: "this is my work experience. There isn't much to it. But if there is a chance to work again I will do my best"}}></h4>
+                    <h4 className='fake-tag' dangerouslySetInnerHTML={{__html: '{/p}'}}></h4>
+                </div>
                 <h1>🧑‍💻 Experience 🧑‍💻</h1>
                 <div className="timeline">
                     { Experience.length? Experience.map((t,i)=>(

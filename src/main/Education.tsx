@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './Education.css'
+import ScrollDown from '../components/ScrollDown';
 
 interface EducationItem {
   Date: string;
@@ -30,7 +31,13 @@ function Education() {
   }, [])
   return (
     <section className='Education' id='Education'>
+      <ScrollDown></ScrollDown>
       <div className="container">
+      <div className="fake-tag-container">
+                    <h4 className='fake-tag' dangerouslySetInnerHTML={{__html: '{p className="no-idea"}'}}></h4>
+                    <h4 className='fake-tag fk-space' dangerouslySetInnerHTML={{__html: "Yo, this is my educational history. You might be wondering why I have to write here. The answer is that I don't know either."}}></h4>
+                    <h4 className='fake-tag' dangerouslySetInnerHTML={{__html: '{/p}'}}></h4>
+                </div>
         <h1>🎓 Education 🎓</h1>
         <div className="timeline">
           {Education.length ? Education.map((t, i) => (

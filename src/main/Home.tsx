@@ -44,6 +44,8 @@ function Home() {
               1000,
               'A Youtuber',
               1000,
+              'ฅ^-^ฅ',
+              1000
             ]}
             wrapper="span"
             speed={50}

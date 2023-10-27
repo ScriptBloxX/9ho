@@ -5,6 +5,7 @@ html,body{
 section{
   background-color: var(--bg_secondary);
   min-height: 100vh;
+  position: relative;
 }
 .home{
   min-height: 0;
@@ -25,4 +26,59 @@ p{
   border-radius: 50%;
   pointer-events: none;
   mix-blend-mode: difference;
+}
+/* components */
+.arrow-down .scroll-down{
+  position: absolute;
+  bottom: 5rem;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  color:#ffffffec;
+
+  padding: 0 5rem;
+  text-transform: lowercase;
+  font-size: .7rem
+}
+.arrow-down .a-r{
+  right: 0;
+}
+.arrow-down .ri-arrow-right-fill{
+  bottom: 3rem;
+}
+.arrow-down .float-down{
+  animation: arrow-float 1s infinite;
+}
+@keyframes arrow-float{
+  0%   {bottom: 4rem;}
+  50%  {bottom: 5rem;}
+  100% {bottom: 4rem;}
+}
+
+@media only screen and (max-width: 420px) {
+  .arrow-down .scroll-down{
+    padding: 0 2rem;
+  }
+}
+
+.fake-tag-container{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.fake-tag{
+  text-transform: lowercase;
+  font-size: .7rem;
+  color: var(--fake-tag);
+}
+.fk-space{
+  margin-left: 1rem;
+}
+.l-0{
+  left: 0;
+}
+.t-0{
+  top: 0;
+}
+.b-0{
+  bottom: 0;
 }
