@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import './Experience.css'
 import ScrollDown from '../components/ScrollDown';
+import { TypeAnimation } from 'react-type-animation';
+
 interface ExperienceItem {
     Date: string;
     JD: string;
@@ -29,7 +31,16 @@ function Experience() {
             <div className="container">
                 <div className="fake-tag-container">
                     <h4 className='fake-tag' dangerouslySetInnerHTML={{__html: '{p className="thank-you"}'}}></h4>
-                    <h4 className='fake-tag fk-space' dangerouslySetInnerHTML={{__html: "this is my work experience. There isn't much to it. But if there is a chance to work again I will do my best"}}></h4>
+                    <TypeAnimation
+                        sequence={[
+                        "this is my work experience. There isn't much to it. But if there is a chance to work again I will do my best",
+                        500,
+                        ]}
+                        wrapper="h4"
+                        speed={50}
+                        style={{display: 'inline-block',fontSize:'.7rem',color:'var(--fake-tag)',marginLeft:'1rem'}}
+                        repeat={Infinity}
+                    />
                     <h4 className='fake-tag' dangerouslySetInnerHTML={{__html: '{/p}'}}></h4>
                 </div>
                 <h1>🧑‍💻 Experience 🧑‍💻</h1>

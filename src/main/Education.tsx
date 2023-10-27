@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './Education.css'
 import ScrollDown from '../components/ScrollDown';
+import { TypeAnimation } from 'react-type-animation';
 
 interface EducationItem {
   Date: string;
@@ -35,7 +36,16 @@ function Education() {
       <div className="container">
       <div className="fake-tag-container">
                     <h4 className='fake-tag' dangerouslySetInnerHTML={{__html: '{p className="no-idea"}'}}></h4>
-                    <h4 className='fake-tag fk-space' dangerouslySetInnerHTML={{__html: "Yo, this is my educational history. You might be wondering why I have to write here. The answer is that I don't know either."}}></h4>
+                    <TypeAnimation
+                        sequence={[
+                          "Yo, this is my educational history. You might be wondering why I have to write here. The answer is that I don't know either.",
+                        500,
+                        ]}
+                        wrapper="h4"
+                        speed={50}
+                        style={{display: 'inline-block',fontSize:'.7rem',color:'var(--fake-tag)',marginLeft:'1rem'}}
+                        repeat={Infinity}
+                    />
                     <h4 className='fake-tag' dangerouslySetInnerHTML={{__html: '{/p}'}}></h4>
                 </div>
         <h1>🎓 Education 🎓</h1>
