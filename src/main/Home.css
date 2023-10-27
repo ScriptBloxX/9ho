@@ -28,7 +28,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem;
-    background-color: var(--bg_main);
+    /* background-color: var(--bg_main); */
+    background-color: #181818;
+
+    background-image: url('https://clipart-library.com/images/kTMKpaGxc.gif');
+    background-size:cover;
+    background-attachment:fixed;
 }
 .container .content-left{
     max-width: 450px;
@@ -63,7 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(209, 195, 211) 0%, rgba(84,50,148,1) 50%, rgba(54,53,67,1) 100%);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(209, 195, 211) 0%, rgba(84,50,148,0.3) 50%, rgba(54,53,67,0.1) 100%);
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -79,11 +84,15 @@
     gap: 1rem;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--bg_main2);
+    /* background-color: var(--bg_main2); */
     width: 100%;
     height: max-content;
     padding: 2rem;
     border-radius: 5px;
+
+    background-image: url('https://cdn.discordapp.com/attachments/1089099102492561429/1167493660171063306/image.png?ex=654e5433&is=653bdf33&hm=0c222a54b1b16ef2903e0e37365dff44aea237f38c6dff27734d36f4bff1cd5c&');
+    background-position: center;
+    background-size: cover;
 }
 .home .profile  .bottom-nav button{
     background-color: var(--bg_main);
