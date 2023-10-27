@@ -27,10 +27,10 @@ function Home() {
             <img  data-aos="zoom-out" src={me}></img>
           </div>
             <div data-aos="fade-up" className="bottom-nav">
-              <button><i className="ri-facebook-box-fill"></i>Facebook</button>
-              <button><i className="ri-instagram-fill"></i>Instagram</button>
-              <button><i className="ri-github-fill"></i> Github</button>
-              <button><i className="ri-youtube-fill"></i>Youtube</button>
+              <a><i className="ri-facebook-box-fill"></i>Facebook</a>
+              <a><i className="ri-instagram-fill"></i>Instagram</a>
+              <a href='https://github.com/ScriptBloxX' target='_blank'><i className="ri-github-fill"></i> Github</a>
+              <a href='https://www.youtube.com/@scriptblox2765' target='_blank'><i className="ri-youtube-fill"></i>Youtube</a>
             </div>
         </div>
       </div>

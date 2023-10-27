@@ -94,11 +94,11 @@
     background-position: center;
     background-size: cover;
 }
-.home .profile  .bottom-nav button{
+.home .profile  .bottom-nav a{
     background-color: var(--bg_main);
     color: var(--text_main);
     outline: none;
-    border: none;
+    border: 2px solid var(--text_secondary);
     height: 60px;
     font-size: 2rem;
     padding: 0 2rem;
@@ -109,7 +109,7 @@
     justify-content: center;
     transition: all linear .2s;
 }
-button:hover{
+.home .profile  .bottom-nav a:hover{
     transform: scale(1.1);
     letter-spacing: 2px;
 }
@@ -129,7 +129,7 @@ button:hover{
     .home .profile .bottom-nav{
         padding: 1rem;
     }
-    .home .profile .bottom-nav button{
+    .home .profile .bottom-nav a{
         font-size: 1rem;
         width: 46%;
     }
@@ -155,7 +155,7 @@ button:hover{
     .home .profile .bottom-nav{
         padding: .5rem;
     }
-    .home .profile .bottom-nav button{
+    .home .profile .bottom-nav a{
         padding: 0 .5rem;
     }
 }
