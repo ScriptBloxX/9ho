@@ -25,7 +25,7 @@ function Experience() {
     return (
         <section className='Experience' id="Experience">
             <div className="container">
-                <h1>Experience</h1>
+                <h1>🧑‍💻 Experience 🧑‍💻</h1>
                 <div className="timeline">
                     { Experience.length? Experience.map((t,i)=>(
                         (i%2 == 0? 

@@ -31,7 +31,7 @@ function Education() {
   return (
     <section className='Education' id='Education'>
       <div className="container">
-        <h1>Education</h1>
+        <h1>🎓 Education 🎓</h1>
         <div className="timeline">
           {Education.length ? Education.map((t, i) => (
             (i % 2 == 0 ?
