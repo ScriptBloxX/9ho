@@ -17,6 +17,16 @@ section{
 p{
   word-wrap: break-word;
 }
+
+/* footer */
+footer{
+  padding: 1rem;
+}
+footer h2{
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .cursor{
   z-index: 100;
   width: 5rem;

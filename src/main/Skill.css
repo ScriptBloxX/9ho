@@ -1,0 +1,89 @@
+.Skill{
+    background-color: var(--dark_purple);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 1rem;
+
+    padding: 1rem;
+}
+.Skill .header-title{
+    margin-top: 1rem;
+}
+.Skill .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+}
+.Skill .container .content .card{
+    background-color: var(--bg_secondary_50);
+    padding: 1rem;
+    border-radius: 5px;
+    border-bottom: 5px solid var(--text_secondary);
+}
+.Skill .container .logo-container{
+    display: flex;
+    gap: 1rem;
+}
+.Skill .container .content .card .logo{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.Skill .container .skill-card .title{
+    margin-bottom: 1rem;
+}
+.Skill .container .content .card .long{
+    width: 150px; 
+    height: 80px; 
+}
+.Skill .container .content .card .logo img{
+    height: 100%;
+    width: 100%;
+    transition: all linear .2s;
+    object-fit: cover;
+}
+.Skill .container .content .card .logo img:hover{
+    transform: scale(1.1);
+}
+
+.Skill .container .skill-card:hover{
+    transform: translateY(-1rem) !important;
+}
+
+/* responsive */
+@media only screen and (max-width:1674px) {
+    .Skill .container .content .card .logo{
+        height: 50px;
+        width: 50px;
+    }
+}
+@media only screen and (max-width:754px) {
+    .Skill .container .skill-card{
+        transform: unset !important; 
+    }
+    .Skill .container .skill-card:hover{
+        transform: unset !important; 
+    }
+    .Skill .container{
+        flex-direction: column;
+        width: 80%;
+    }
+    .Skill .container .content .card .logo{
+        height: 35px;
+        width: 35px;
+    }
+    .Skill .container .content .card .long{
+        height: 35px; 
+        width: 70px; 
+    }
+    .Skill .header-title h1{
+        font-size: .8rem;
+    }
+}

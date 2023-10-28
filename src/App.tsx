@@ -6,6 +6,7 @@ import 'aos/dist/aos.css'
 import { useState } from 'react'
 import Education from './main/Education.tsx'
 import Certificate from './main/Certificate.tsx'
+import Skill from './main/Skill.tsx'
 
 function App() {
   const [cursorX, setCursorX] = useState<number>(0);
@@ -22,6 +23,10 @@ function App() {
       <Experience></Experience>
       <Certificate></Certificate>
       <Education></Education>
+      <Skill></Skill>
+      <footer>
+        <h2>Thank you for reading until the end!</h2>
+      </footer>
     </>
   )
 }

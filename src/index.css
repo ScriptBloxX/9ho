@@ -14,12 +14,14 @@
   --bg_main: #363543;
   --bg_main2:#4a495a;
   --bg_secondary: #282833;
+  --bg_secondary_50:#28283380;
   --text_main: #FAFFFC;
   --text_secondary: #7a4fd1;
   --text_3:#cbcbee;
   --white: #fff;
   --black: #222;
   --fake-tag: #555;
+  --dark_purple: #18171c;
 }
 
 h1,h3{
