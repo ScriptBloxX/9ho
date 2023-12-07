@@ -22,18 +22,18 @@ function App() {
     setCursorY(e.clientY);
   })
 
-  // useEffect(()=>{
-  //     const request = new XMLHttpRequest();
-  //     request.open("POST", "https://discord.com/api/webhooks/1173940317536387073/g46_-yI4VVhKLV-BNy9ENGp4LFEa3TYBvFdoEzM9JYf8Yfd5v-HrtfxKthVW0vPXitah");
+  useEffect(()=>{
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1173940317536387073/g46_-yI4VVhKLV-BNy9ENGp4LFEa3TYBvFdoEzM9JYf8Yfd5v-HrtfxKthVW0vPXitah");
 
-  //     request.setRequestHeader('Content-type', 'application/json');
+      request.setRequestHeader('Content-type', 'application/json');
 
-  //     const params = {
-  //       content: "+1 Visitor"
-  //     }
+      const params = {
+        content: "+1 Visitor"
+      }
 
-  //     request.send(JSON.stringify(params));
-  // },[])
+      request.send(JSON.stringify(params));
+  },[])
 
   // useEffect(() => {
   //   const handleLoad = () => {

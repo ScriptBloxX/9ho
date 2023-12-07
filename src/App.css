@@ -68,6 +68,11 @@ footer h2{
   .arrow-down .scroll-down{
     padding: 0 2rem;
   }
+  body{
+    overflow: unset !important;
+    overflow-y: unset !important;
+    overflow-x: unset !important;
+  }
 }
 
 .fake-tag-container{
