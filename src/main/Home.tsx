@@ -27,8 +27,8 @@ function Home() {
             <img  data-aos="zoom-out" src={me}></img>
           </div>
             <div data-aos="fade-up" className="bottom-nav">
-              <a><i className="ri-facebook-box-fill"></i>Facebook</a>
-              <a><i className="ri-instagram-fill"></i>Instagram</a>
+              <a href='https://www.facebook.com/SorryItError' target='_blank'><i className="ri-facebook-box-fill"></i>Facebook</a>
+              <a href='https://www.instagram.com/9hodev' target='_blank'><i className="ri-instagram-fill"></i>Instagram</a>
               <a href='https://github.com/ScriptBloxX' target='_blank'><i className="ri-github-fill"></i> Github</a>
               <a href='https://www.youtube.com/@scriptblox2765' target='_blank'><i className="ri-youtube-fill"></i>Youtube</a>
             </div>

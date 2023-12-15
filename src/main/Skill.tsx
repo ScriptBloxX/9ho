@@ -53,6 +53,9 @@ function Skill() {
                             <div className="logo">
                                 <img alt='ts' src='https://cdn.discordapp.com/attachments/1089099102492561429/1167941628556746883/typescript_original_logo_icon_146317.png?ex=654ff567&is=653d8067&hm=5c94c709af6bacaa9bd70c899da73ebdd273f33cf46da2123700440605d67de7&'></img>
                             </div>
+                            <div className="logo">
+                                <img alt='express' src='https://cdn.discordapp.com/attachments/1089099102492561429/1185041011915898890/bgf8f8f8-flat750x075f-pad750x1000f8f8f8.png?ex=658e2a72&is=657bb572&hm=07bd171024365481ca16c177ffeef498c5fa49dedc3db6194bbefbac95be1ea4&'></img>
+                            </div>
                         </div>
                     </div>
                     <div className="card">
