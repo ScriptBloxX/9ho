@@ -1,0 +1,109 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+    padding: 1rem;
+    background-color: var(--dark-purple);
+}
+.project .project-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.project .project-container .project-box{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+.project .project-container .project-box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease-in-out .3s;
+    filter:brightness(.6);
+}
+.project .project-container .project-box:hover img{
+    transform: scale(1.1);
+    filter:brightness(.3);
+}
+.project .project-container .project-box .title{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    padding: .5rem;
+    z-index: 2;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+.project .project-container .project-box:hover .title{
+    opacity: 1;
+    top: 1rem;
+}
+.project .project-container .project-box:hover .content{
+    background-color: unset;
+} 
+.project .project-container .project-box .content{
+    padding: .5rem;
+    z-index: 2;
+    border-left: .5rem solid var(--text_secondary);
+}
+.project .project-container .project-box .bottom-tag{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    transition: all ease-in-out .3s;
+}
+.project .project-container .project-box .bottom-tag span{
+    padding: .1rem .5rem;
+    border-radius: 2.5px;
+    color: var(--text_main);
+}
+.project .project-container .project-box .btn{
+    position: absolute;
+    bottom: 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 2;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+.project .project-container .project-box:hover .btn{
+    opacity: 1;
+    bottom: 5rem;
+}
+.project .project-container .project-box .btn a{
+    padding: .1rem .5rem;
+    border-radius: 2.5px;
+    background-color: var(--text_secondary);
+    transition: all ease-in-out .3s;
+}
+.project .project-container .project-box .btn a:hover{
+    transform: scale(1.1);
+}
+.purple{
+    background-color: #b10fb1;
+}
+.project .project-container .project-box:hover .bottom-tag{
+    opacity: 0;
+    bottom: 0;
+}

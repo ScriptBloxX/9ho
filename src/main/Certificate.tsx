@@ -23,11 +23,19 @@ function Certificate() {
                     </div>
                     <div className="slide">
                         <img onClick={(e)=>ViewCertificate((e.target as HTMLImageElement).src)} alt='py' src='https://cdn.discordapp.com/attachments/1160522295517925448/1167513207062138910/image.png?ex=654e6667&is=653bf167&hm=4d6153aeb206a3d6bfa360e044332b0e042077e72132ee9ef5a1fe9b124340fd&'></img>
-                        <h3>GDSC KMITL</h3>
+                        <h3>GTC : Introduction to Python</h3>
                     </div>
                     <div className="slide">
                         <img onClick={(e)=>ViewCertificate((e.target as HTMLImageElement).src)} alt='tobeit67-online' src='https://cdn.discordapp.com/attachments/1160522295517925448/1175772053362712586/tobeit67_online.png?ex=656c720e&is=6559fd0e&hm=94ef4b68b6023051f99751722e4b1bb6425101a39d957f499d556051fbe4a1e8&'></img>
                         <h3>ToBeIT'67 The Second (Online)</h3>
+                    </div>
+                    <div className="slide">
+                        <img onClick={(e)=>ViewCertificate((e.target as HTMLImageElement).src)} alt='tobeit67-onsite' src='https://cdn.discordapp.com/attachments/1160522295517925448/1185473044446203984/img009.jpg?ex=658fbcce&is=657d47ce&hm=60d46baef77cf4df0ace1522ba8c36a10ed7bb006ccc2067a730d1cbb5e48b5c&'></img>
+                        <h3>ToBeIT'67 The Second (Onsite)</h3>
+                    </div>
+                    <div className="slide">
+                        <img onClick={(e)=>ViewCertificate((e.target as HTMLImageElement).src)} alt='kmitl-masterclass' src='https://cdn.discordapp.com/attachments/1160522295517925448/1185686930256572556/image.png?ex=65908401&is=657e0f01&hm=98912adbe801da4735446b5d5bdca2a8aadc01c13236750b88085c6d4b9c7e49&'></img>
+                        <h3>KMITL MASTERCLASS</h3>
                     </div>
                     <div className="slide">
                         <img onClick={(e)=>ViewCertificate((e.target as HTMLImageElement).src)} alt='js-hr' src='https://cdn.discordapp.com/attachments/1160522295517925448/1167513338931056640/js_hackerrank.png?ex=654e6687&is=653bf187&hm=6fce5ef923a8f131a66b17a07c54d0ef0ea8324cab1c2544bac958c613fb335b&'></img>
@@ -51,6 +59,7 @@ function Certificate() {
                     </div>
                 </div>
             </div>
+            <button onClick={()=>window.open('/project')}>View Projects</button>
         </div>
     )
 }
