@@ -109,7 +109,7 @@ function Project() {
                             <h3>{project.desc}</h3>
                         </div>
                         <div className="btn">
-                            <a href={project.visit} target='_blank'><i className="ri-eye-2-line"></i>Visit</a>
+                            <a href={project.visit} target='_blank'><i className="ri-eye-2-line"></i>View</a>
                             {project.source?
                             <a href={project.source} target='_blank'><i className="ri-code-s-slash-line"></i>Source</a>                            
                             :null}
